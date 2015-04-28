@@ -1,0 +1,36 @@
+@media (max-width:960px) {
+	header {padding:0px;}
+	header .third {width: 33.333%;}
+	header .two-thirds {width: 66.666%;}
+
+	.third, .two-thirds {width: 100%;}
+
+	input.third {width: 33.333%;}
+
+	.testimonial {height: auto;}
+	.testimonial img {max-height:100%;}
+
+	.blog-post {min-height:100%; max-height: 100%;}
+	.blog-post .ft-img {width: 100%; max-width: 100%; height:auto; float:none; margin-right: 0px; border-right:0px; border-bottom: 1px solid #c7c7c7;}
+	.blog-post h4 {padding-left:15px; padding-right: 15px;}
+	.blog-post date {padding:10px 15px;}
+	.blog-post p {padding: 0px 15px;}
+}
+
+@media (max-width: 1160px) {
+	.third, .two-thirds {width: 100%;}
+	.blog-post {min-height:100%; max-height: 100%;}
+	.blog-post .ft-img {width: 100%; max-width: 100%; height:auto; float:none; margin-right: 0px; border-right:0px; border-bottom: 1px solid #c7c7c7;}
+	.blog-post h4 {padding-left:15px; padding-right: 15px;}
+	.blog-post date {padding:10px 15px;}
+	.blog-post p {padding: 0px 15px;}
+	header .third {width: 33.333%;}
+	header .two-thirds {width: 66.666%;}
+	.jumbotron .overlay {padding:7% 20px; color: #fff; text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);}
+}
+
+@media (max-width: 630px) {
+	header {display: none;}
+	header.resp-menu {display: block;}
+
+	}

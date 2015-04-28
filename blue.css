@@ -1,0 +1,137 @@
+/*
+Theme Name: Action Jackson
+Theme URI: http://inspyregroup.com
+Description: A Modular Theme.
+Author: Nicholas Koskowski, Inspyre Group
+Version: 1.0
+Tags: awesome
+*/
+
+/* Base */
+* {box-sizing:border-box;}
+h1,h2,h3,h4,h5,h6 {font-family: 'Fjalla One', sans-serif; margin:0px; text-transform: uppercase;}
+body {font-family: 'Droid Serif', serif; background-image:url('images/carbon.png');}
+a {color: inherit; text-decoration: none;}
+img {max-width: 100%;}
+ul {list-style-type:square;}
+
+
+/* Typography */
+
+h1 {font-size:48px;}
+h2 {font-size: 42px;}
+h3 {font-size: 38px;}
+h4 {font-size: 32px;}
+h5 {font-size: 28px;}
+h6 {font-size: 22px;}
+
+p,ul,label,input,textarea,select,date {font-size: 16px;}
+
+span {color:#2B7AC0;}
+
+/* Forms and Fields */
+
+input[type=text],input[type=email],input[type=password] {background-color: transparent; border:1px solid #c7c7c7; padding:10px;}
+input[type=submit],button,.btn {color: #fff; background-color:#2B7AC0; font-family: 'Fjalla One', sans-serif; text-transform: uppercase; border:none; padding:10px 25px;}
+/* Column System */
+
+.col-wrap {font-size:0;}
+.column {display: inline-block; vertical-align: top;}
+.full {width: 100%;}
+.three-fourths {width: 75%;}
+.two-thirds {width: 66.666%;}
+.half {width:50%;}
+.third {width:33.333%;}
+.fourth {width: 25%;}
+
+/* Systemic */
+
+.talignleft {text-align: left;}
+.talignright {text-align: right;}
+.taligncenter {text-align: center;}
+.alignleft {float: left;}
+.alignright {float: right;}
+
+.spacer {padding:25px;}
+
+/* Wrappers */
+
+.container {max-width: 1170px; margin-left: auto; margin-right: auto;}
+.big-container {max-width: 1600px; margin-left: auto; margin-right: auto; -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+-moz-box-shadow:    0px 0px 10px 0px rgba(0, 0, 0, 1);
+box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 1); }
+
+.white-wrap {background-color: #fff;}
+.step-wrap {background-image:url('images/brickwall.png'); background-repeat: repeat;}
+.gray-wrap {background-color: #eee;}
+.color-wrap {background-color:#2B7AC0;}
+.dark-wrap {background-color: #000; color: #fff;}
+
+/* Header */
+
+header {position: fixed; top:0px; left:0px; width: 100%; z-index: 9999; padding:0px 15px; color: #fff; -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); box-shadow:0px 0px 15px 0px rgba(50, 50, 50, 0.15);}
+header .dark-wrap {padding:5px 15px;}
+header nav ul {padding:0px; margin:5px;}
+header nav ul li {display: inline-block; vertical-align: top; font-family: 'Fjalla One', sans-serif; padding:10px 15px;}
+header nav ul li:hover {background-color: #fff;}
+header nav ul li:hover a {color:#000;}
+header nav ul li a {color: #fff; text-transform: uppercase; text-decoration: none;}
+
+header .logo {font-size: 28px; text-transform: uppercase; margin:5px;}
+header .logo img {max-height: 38px;}
+
+/* Homepage */
+
+main {margin-top: 60px;}
+
+.features {padding:10px 25px;}
+
+.jumbotron {position: relative; max-height:580px; overflow: hidden;}
+.jumbotron h2 {text-transform: uppercase;}
+.jumbotron .overlay {position: absolute; top: 0px; left: 0px; padding-top:12%; color: #fff; width: 100%; height: 100%; background-image: url('images/slider-overlay.png');}
+.jumbotron .overlay input[type=email] {margin-right: 20px;}
+
+.testimonial {border:1px solid #c7c7c7; position: relative; -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); box-shadow:0px 0px 15px 0px rgba(50, 50, 50, 0.15); height: 483px; background-color: #fff;}
+.testimonial img {width: 100%; height: auto; max-height: 320px; border-bottom:1px solid #c7c7c7;}
+.testimonial .overlay {position: absolute; left:0px; top:25px; background-color:#393939; color: #fff; padding:10px;}
+.testimonial h3 {margin: 0px; text-transform: uppercase;}
+.testimonial-content {padding: 15px;}
+
+.blog-nav ul {margin: 0px; padding:0px; -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); box-shadow:0px 0px 15px 0px rgba(50, 50, 50, 0.15);}
+.blog-nav li {list-style:none; border-bottom: 1px solid #c7c7c7; font-family: 'Fjalla One', sans-serif; text-transform: uppercase; font-size: 32px; padding:15px 0px; padding-left: 25px;}
+.blog-nav li a {text-decoration: none; color:#fff;}
+.blog-nav i {font-size: 36px; color: #fff; padding-right: 20px;}
+
+.blog-posts {}
+.blog-post {width: 100%; background-color:#eee; clear:both; display: block; max-height:282px; min-height:282px; border:1px solid #c7c7c7; margin-bottom: 25px; -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); box-shadow:0px 0px 15px 0px rgba(50, 50, 50, 0.15);}
+.blog-post h4 {margin:0px; padding-top:15px; padding-bottom:10px;}
+.blog-post p {line-height:26px; padding-right:25px;}
+.blog-post date {padding:10px 0px; font-weight: bold; border-top:1px solid #c7c7c7; display: block;}
+.blog-post .ft-img {max-width:420px; height: 280px; margin-right: 15px; border-right:1px solid #c7c7c7;}
+
+.phraser {}
+.phraser h5 {text-transform: uppercase; margin:0px; padding-top: 25px;}
+
+.pagination {text-align: center; font-size: 16px;}
+.pagination li {display: inline-block; vertical-align: top; border-right:1px solid #c7c7c7; border-bottom:none; padding:10px 20px; margin:0px;}
+.pagination li:first-of-type {border-left:1px solid #c7c7c7;}
+
+.about .avatar {color: #fff; text-align: center; -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); box-shadow:0px 0px 15px 0px rgba(50, 50, 50, 0.15);}
+.about .avatar img {width: 100%;}
+.about .avatar h2 {text-transform: uppercase; border-bottom:1px solid #c7c7c7; padding-top: 5px; padding-bottom: 5px; margin:0px;}
+.about .avatar ul li {list-style: none; padding:5px 0px;}
+.about .avatar p {text-align: left; padding:10px 25px; margin:0px;}
+
+.about-post {width: 100%; background-color:#eee; clear:both; display: block; border:1px solid #c7c7c7; margin-bottom: 25px; padding:15px 25px; -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); box-shadow:0px 0px 15px 0px rgba(50, 50, 50, 0.15);}
+.about-post h4 {margin:0px; padding-top:15px; padding-bottom:10px;}
+.about-post p {line-height:26px;}
+.about-post date {padding:10px 0px; font-weight: bold; border-top:1px solid #c7c7c7; display: block;}
+.about-post .ft-img {max-width:420px; height: 280px; margin-right: 15px; border-right:1px solid #c7c7c7;}
+
+/* Testimonials */
+
+.testimonial-avatar img {border-radius:100%; max-width: 280px; max-height: 280px; margin-right:20px;}
+.testimonial-stats {list-style: none;}
+
+/* External */
+.slick-slider {margin-bottom: 0px !important;}
