@@ -11,7 +11,7 @@ Tags: awesome
 * {box-sizing:border-box;}
 h1,h2,h3,h4,h5,h6 {font-family: 'Fjalla One', sans-serif; margin:0px; text-transform: uppercase;}
 body {font-family: 'Droid Serif', serif; background-image:url('images/carbon.png');}
-a {color: inherit; text-decoration: none;}
+a {color: #c0392b; text-decoration: none;}
 img {max-width: 100%;}
 ul {list-style-type:square;}
 
@@ -32,7 +32,7 @@ span {color:#c0392b;}
 
 /* Forms and Fields */
 
-input[type=text],input[type=email],input[type=password],textarea,select {background-color: transparent; border:1px solid #c7c7c7; padding:10px; resize:none;}
+input[type=text],input[type=email],input[type=password],textarea,select {background-color: transparent; border:1px solid #c7c7c7; padding:10px; resize:none; margin:10px 0px; width: 100%;}
 input[type=submit],button,.btn {color: #fff; background-color:#c0392b; font-family: 'Fjalla One', sans-serif; text-transform: uppercase; border:none; padding:10px 25px; font-size: 14px;}
 /* Column System */
 
@@ -45,6 +45,7 @@ input[type=submit],button,.btn {color: #fff; background-color:#c0392b; font-fami
 .third {width:33.333%;}
 .fourth {width: 25%;}
 .sixth {width: 16.6%;}
+.seventh {width:14.28%;}
 
 /* Systemic */
 
@@ -84,15 +85,17 @@ header nav ul li ul li {display: block; min-width: 180px; color: #fff;}
 header nav ul li ul li a {color: #fff !important;}
 header nav ul li ul li:hover a {color: #000 !important;}
 
-.nav-menu {display: none; vertical-align: top;}
+header .social-media {display: inline-block; vertical-align: top; margin-left: 25px; margin-top: 8px; font-size:22px;}
+header .social-media li {margin: 0px 7px;}
+
+.nav-menu {vertical-align: top;}
 .story-menu {display: inline-block; vertical-align: top;}
 
 .switch-menu {display: inline-block; vertical-align: top; cursor: pointer;}
 .switch-menu ul li {background-color: #c0392b;}
 .switch-menu ul li:hover {color: #000;}
 
-header .logo {font-size: 28px; text-transform: uppercase; margin:5px;}
-header .logo img {max-height: 38px;}
+header .logo {font-size: 28px; text-transform: uppercase; margin:5px; max-height: 38px;}
 
 header.resp-menu {display: none;}
 header.resp-menu i {font-size:32px; padding-top: 10px; cursor:pointer; }
@@ -112,6 +115,7 @@ main {margin-top: 60px;}
 
 .social-media {padding:0px; margin:0px; font-size: 42px;}
 .social-media li {display: inline-block; vertical-align: top;}
+.social-media li a {color: inherit;}
 
 .logos {padding:10px 0px;}
 .logos h4 {font-size: 22px;}
@@ -135,6 +139,7 @@ main {margin-top: 60px;}
 .testimonial img {width: 100%; height: auto; border-bottom:1px solid #c7c7c7;}
 .testimonial .overlay {display:block; clear: both; background-color:#000; color: #fff; padding:0px;}
 .testimonial h3 {margin: 0px; padding:10px 25px;  text-transform: uppercase; background-color: #393939; display: inline-block;}
+.testimonial h3 a {color: inherit;}
 .testimonial-content {padding: 15px;}
 .testimonial .btn {margin-top: 25px;}
 
@@ -147,6 +152,7 @@ main {margin-top: 60px;}
 .blog-posts {}
 .blog-post {width: 100%; background-color:#eee; clear:both; display: block; max-height:282px; min-height:282px; border:1px solid #c7c7c7; margin-bottom: 25px; -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.15); box-shadow:0px 0px 15px 0px rgba(50, 50, 50, 0.15);}
 .blog-post h4 {margin:0px; padding-top:15px; padding-bottom:10px;}
+.blog-post h4 a {color: inherit;}
 .blog-post p {line-height:26px; padding-right:25px;}
 .blog-post date {padding:10px 0px; font-weight: bold; border-top:1px solid #c7c7c7; display: block;}
 .blog-post .ft-img {width:420px; height: 280px; overflow: hidden; margin-right: 15px; border-right:1px solid #c7c7c7; float: left;}

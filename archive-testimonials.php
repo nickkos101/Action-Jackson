@@ -4,7 +4,7 @@ $optionname = 'main_theme_options'; $mainoptions = get_option($optionname);
 ?>
 <main>
     <div class="step-wrap testimonials testimonials-page">
-        <h2 class="taligncenter" style="padding-top:25px;">Testimonials</h2>
+        <h2 class="taligncenter" style="padding-top:25px;">Success Stories</h2>
         <?php query_posts(array('posts_per_page' => 99, 'post_type' => 'testimonials')); ?>
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="spacer column third">

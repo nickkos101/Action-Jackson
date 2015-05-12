@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/function.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Fjalla+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Fjalla+One' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" />
   <meta name="viewport" content="width=device-width">
   <?php wp_head(); ?>
@@ -21,26 +21,33 @@
     <header>
       <div class="big-container dark-wrap">
         <div class="column third">
-          <a href="<?php echo get_site_url(); ?>"><h1 class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/header-logo.png"></h1></a>
+          <a href="<?php echo get_site_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/header-logo.png"></a>
+          <ul class="social-media">
+            <li><a target="_blank" href="https://www.facebook.com/actionjacksonfitnessfans"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/JacksonBloore"><i class="fa fa-twitter-square"></i></a></li>
+            <li><a target="_blank" href="http://instagram.com/actionjacksonfitness"><i class="fa fa-instagram"></i></a></li>
+            <li><a target="_blank" href="http://www.youtube.com/channel/UC_Y_sE7fnTWS0IysjzlVwHg"><i class="fa fa-youtube-square"></i></a></li>
+            <li><a target="_blank" href="http://www.yelp.com/biz/action-jackson-fitness-san-francisco-2"><i class="fa fa-yelp"></i></a></li>
+          </ul>
         </div>
         <div class="column two-thirds talignright">
           <nav>
             <?php if (is_home()) { ?>
-            <div class="story-menu">
+            <!--<div class="story-menu">
               <ul>
                 <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#feeds">Fitness Feeds</a></li>
+                <li><a href="#feeds">Blog</a></li>
                 <li><a href="#about">About Me</a></li>
               </ul>
-            </div>
+            </div>-->
             <div class="nav-menu">
               <?php wp_nav_menu(array('theme_location' => 'Header_Nav',)); ?>
             </div>
-            <div class="switch-menu">
+            <!--<div class="switch-menu">
               <ul>
                 <li class="toggle-menu"><a>Pages</a></li>
               </ul>
-            </div>
+            </div>-->
             <?php } else { ?>
             <?php wp_nav_menu(array('theme_location' => 'Header_Nav',)); } ?>
           </nav>

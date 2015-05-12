@@ -33,4 +33,27 @@
 	header {display: none;}
 	header.resp-menu {display: block;}
 
-	}
+}
+
+@media (max-width: 1600px) {
+	.jumbotron.white-wrap h1 {font-size: 28px;} 
+	.jumbotron.white-wrap h6 {font-family: 18px;}
+	.about .jumbotron h1 {font-size: 28px;} 
+	.about .jumbotron h6 {font-family: 18px;}
+}
+
+@media (max-width: 1400px) {
+	header .social-media {display: none;}
+}
+
+@media (max-width: 1260px) {
+	.jumbotron.white-wrap .fourth {width: 100%;}
+	.jumbotron.white-wrap .three-fourths {width: 100%;}
+	.jumbotron.white-wrap h1 {font-size:34px;} 
+	.jumbotron.white-wrap h6 {font-family:22px;}
+
+	.about .jumbotron .fourth {width: 100%; border-right: none !important;}
+	.about .jumbotron .three-fourths {width: 100%;}
+	.about .jumbotron h1 {font-size:34px;} 
+	.about .jumbotron h6 {font-family:22px;}
+}

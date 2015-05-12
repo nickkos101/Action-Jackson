@@ -3,57 +3,74 @@ get_header();
 $optionname = 'main_theme_options'; $mainoptions = get_option($optionname);
 ?>
 <main>
-    <div class="jumbotron column full">
-        <div class="slider">
-            <iframe width="100%" height="580" src="http://www.youtube.com/embed/Q4Ci0b-6NiM?modestbranding=1&autoplay=1&controls=0" frameborder="0"></iframe>
+    <div class="jumbotron column full reversed white-wrap" id="about">
+     <div class="column fourth" style="padding:25px;">
+        <h1>Want abs like these?</h1>
+        <h6>See whats been holding you back with my top 10 excersize mistakes video.</h6>
+        <form action="//actionjacksonfitness.us3.list-manage.com/subscribe/post?u=2c878d49dd034641b49d2724a&amp;id=a84415273b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+           <input type="text" value="" name="MMERGE1" class="" id="mce-MMERGE1" placeholder="First Name">
+           <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address*">
+           <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+        </div> 
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_2c878d49dd034641b49d2724a_a84415273b" tabindex="-1" value=""></div>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+    </form>
+</div>
+<div class="column three-fourths">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/abs.jpg">
+</div>
+</div>
+<div class="column full color-wrap taligncenter logos">
+    <h4>You probably saw him on...</h4>
+    <div class="features taligncenter">
+        <div class="seventh">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/espn.png">
+        </div>
+        <div class="seventh">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/nike.png">
+        </div>
+        <div class="seventh">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/mens-health.png">
+        </div>
+        <div class="seventh">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/bodybuilding.png">
+        </div>
+        <div class="seventh">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/mensfiness.png">
+        </div>
+        <div class="seventh">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/perfect.png">
+        </div>
+        <div class="seventh">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/mf.png">
         </div>
     </div>
-    <div class="column full color-wrap taligncenter logos">
-        <h4>You probably saw him on...</h4>
-        <div class="features">
-            <div class="sixth">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/espn.png">
+</div>
+<div class="step-wrap testimonials" id="testimonials">
+    <h3 class="taligncenter" style="padding-top:25px;">He transformed these peoples lifestyles...</h3>
+    <?php query_posts(array('posts_per_page' => 3, 'post_type' => 'testimonials', 'orderby' => 'rand')); ?>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <div class="spacer column third">
+        <div class="gray-wrap testimonial">
+            <div class="ft-img">
+                <?php
+                if ( has_post_thumbnail() ) {
+                    the_post_thumbnail();
+                } 
+                ?>
             </div>
-            <div class="sixth">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/nike.png">
+            <div class="overlay">
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             </div>
-            <div class="sixth">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/mens-health.png">
-            </div>
-            <div class="sixth">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/bodybuilding.png">
-            </div>
-            <div class="sixth">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/mensfiness.png">
-            </div>
-            <div class="sixth">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/perfect.png">
+            <div class="testimonial-content">
+                <?php the_excerpt(); ?>
+                <p class="talignright"><a class="btn" href="<?php the_permalink(); ?>">See Story</a></p>
             </div>
         </div>
     </div>
-    <div class="step-wrap testimonials" id="testimonials">
-        <h3 class="taligncenter" style="padding-top:25px;">He transformed these peoples lifestyles...</h3>
-        <?php query_posts(array('posts_per_page' => 3, 'post_type' => 'testimonials', 'orderby' => 'rand')); ?>
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <div class="spacer column third">
-            <div class="gray-wrap testimonial">
-                <div class="ft-img">
-                    <?php
-                    if ( has_post_thumbnail() ) {
-                        the_post_thumbnail();
-                    } 
-                    ?>
-                </div>
-                <div class="overlay">
-                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                </div>
-                <div class="testimonial-content">
-                    <?php the_excerpt(); ?>
-                    <p class="talignright"><a class="btn" href="<?php the_permalink(); ?>">See Story</a></p>
-                </div>
-            </div>
-        </div>
-    <?php endwhile; else: endif; ?>
+<?php endwhile; else: endif; ?>
 </div>
 <div class="white-wrap feeds" id="feeds">
     <div class="spacer two-thirds column">
@@ -107,22 +124,6 @@ $optionname = 'main_theme_options'; $mainoptions = get_option($optionname);
         <nav class="blog-nav">
           <?php wp_list_categories('show_count=1&title_li='); ?>  
       </nav>
-      <div class="white-wrap phraser">
-        <h5>Get a <span>free</span> workout just for <span>you!</span></h5>
-        <p>If you want abs like me, you have to workout like me - enter your email below and get started.</p>
-        <form>
-            <input placeholder="Email Address" class="third" type="email">
-            <input type="submit" value="Get Workout!">
-        </form>
-        <h5>Random Ways to Say Jacked:</h5>
-        <h1><span class="randJack">DONKEY YOKED</span></h1>
-        <h5>Socialize</h5>
-        <ul class="social-media">
-            <li><a href="<?php the_field('facebook_url', 'option'); ?>"><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href="<?php the_field('twitter_url', 'option'); ?>"><i class="fa fa-twitter-square"></i></a></li>
-            <li><a href="<?php the_field('instagram_url', 'option'); ?>"><i class="fa fa-instagram"></i></a></li>
-        </ul>
-    </div>
 </div>
 </div>
 <div class="jumbotron column full reversed" id="about">
@@ -134,7 +135,7 @@ $optionname = 'main_theme_options'; $mainoptions = get_option($optionname);
         <h6><?php the_field('bottom_content_sub_headline', 'option'); ?></h6>
         <hr/>
         <?php the_field('bottom_content', 'option'); ?>
-        <p><a href="/training" class="btn">Training</a><a href="/about-me" class="btn">About Me</a></p>
+        <p><a href="/about-me" class="btn">About Me</a></p>
     </div>
 </div>
 </div>

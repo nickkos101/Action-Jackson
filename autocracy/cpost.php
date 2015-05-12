@@ -4,6 +4,7 @@ $prefix = 'YOUR_PREFIX_';
 global $meta_boxes;
 $meta_boxes = array();
 
+/*
 $meta_boxes[] = array(
     'id' => 'pages',
     'title' => 'Testimonial Info',
@@ -50,7 +51,7 @@ $meta_boxes[] = array(
         ),
      ),
     );
-
+*/
 
 /* * ******************* META BOX REGISTERING ********************** */
 
